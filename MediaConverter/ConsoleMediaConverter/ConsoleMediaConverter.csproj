@@ -7,7 +7,7 @@
     <ProjectGuid>{04AC9BFD-F8C4-48E7-8786-5C7C72BE6EA7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleMediaConverter</RootNamespace>
-    <AssemblyName>ConsoleMediaConverter</AssemblyName>
+    <AssemblyName>medcvert</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,8 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arguments.cs" />
+    <Compile Include="ArrayChunk.cs" />
+    <Compile Include="Exceptions\CmdArgumentException.cs" />
+    <Compile Include="Exceptions\InsufficienArgumentsException.cs" />
+    <Compile Include="Exceptions\MultipleArgumentException.cs" />
+    <Compile Include="Files.cs" />
+    <Compile Include="Output.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Exceptions\UnknownArgumentException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
